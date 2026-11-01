@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | MacBook Neo</title>
+
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
+
+<body class="form-page">
+    <header>
+        <nav class="menu" aria-label="Main navigation">
+            <p class="logo"><b>MacNeo</b></p>
+            <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="register.html" aria-current="page">Register</a></li>
+            </ul>
+            <div class="menu-right">
+                <button type="button" class="theme-toggle" id="themeToggle" aria-pressed="false">Dark mode</button>
+                <p>Sign in</p>
+                <p>Log in</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+
+            <div class="form-card">
+
+                <p class="eyebrow">Create an account</p>
+                <h1>Join the MacNeo community</h1>
+                <p class="form-intro">
+                    Register to save your favourite models, follow order updates and get
+                    early access to new colours. All fields marked as required must be filled in.
+                </p>
+
+                <p id="register-note" class="demo-note">
+                    Demo only. No account is created, nothing is sent or stored.
+                    Use sample details for testing.
+                </p>
+
+                <div id="registerSuccess" class="success-box" role="status" tabindex="-1" hidden>
+                    Registration form completed successfully. This is a demonstration only —
+                    no account was created.
+                </div>
+
+                <form id="registerForm" class="needs-validation" novalidate aria-describedby="register-note">
+
+                    <div class="row g-3">
+
+                        <!-- First name -->
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label">First name <span aria-hidden="true">*</span></label>
+                            <input type="text" class="form-control" id="firstName" name="firstName"
+                                   minlength="2" autocomplete="given-name" required>
+                            <div class="invalid-feedback">Please enter at least 2 characters.</div>
+                            <div class="valid-feedback">Looks good.</div>
+                        </div>
+
+                        <!-- Last name -->
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label">Last name <span aria-hidden="true">*</span></label>
+                            <input type="text" class="form-control" id="lastName" name="lastName"
+                                   minlength="2" autocomplete="family-name" required>
+                            <div class="invalid-feedback">Please enter at least 2 characters.</div>
+                            <div class="valid-feedback">Looks good.</div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-12">
+                            <label for="regEmail" class="form-label">Email <span aria-hidden="true">*</span></label>
+                            <input type="email" class="form-control" id="regEmail" name="email"
+                                   autocomplete="email" required>
+                            <div class="invalid-feedback">Please enter a valid email address, for example name@example.com.</div>
+                            <div class="valid-feedback">Looks good.</div>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="col-md-6">
+                            <label for="password" class="form-label">Password <span aria-hidden="true">*</span></label>
+                            <input type="password" class="form-control" id="password" name="password"
+                                   minlength="8" autocomplete="new-password" required
+                                   aria-describedby="passwordHelp">
+                            <div class="invalid-feedback">The password must be at least 8 characters.</div>
+                            <span id="passwordHelp" class="field-help">Use at least 8 characters.</span>
+                        </div>
+
+                        <!-- Confirm password -->
+                        <div class="col-md-6">
+                            <label for="confirmPassword" class="form-label">Confirm password <span aria-hidden="true">*</span></label>
+                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
+                                   minlength="8" autocomplete="new-password" required>
+                            <div class="invalid-feedback">The passwords do not match.</div>
+                            <span class="field-help">Both passwords must be identical.</span>
+                        </div>
+
+                        <!-- Gender: optional radio group, grouped with fieldset + legend -->
+                        <fieldset class="col-12">
+                            <legend>Gender (optional)</legend>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female">
+                                <label class="form-check-label" for="genderFemale">Female</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male">
+                                <label class="form-check-label" for="genderMale">Male</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="genderOther" value="other">
+                                <label class="form-check-label" for="genderOther">Other</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="genderNa" value="prefer-not-to-say">
+                                <label class="form-check-label" for="genderNa">Prefer not to say</label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Hobbies: optional checkboxes -->
+                        <fieldset class="col-12">
+                            <legend>Hobbies and interests (optional)</legend>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="hobbies" id="hobbyDesign" value="design">
+                                <label class="form-check-label" for="hobbyDesign">Design</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="hobbies" id="hobbyCoding" value="coding">
+                                <label class="form-check-label" for="hobbyCoding">Coding</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="hobbies" id="hobbyMusic" value="music">
+                                <label class="form-check-label" for="hobbyMusic">Music</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="hobbies" id="hobbyStudy" value="studying">
+                                <label class="form-check-label" for="hobbyStudy">Studying</label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Country: required select with an empty default option -->
+                        <div class="col-md-6">
+                            <label for="country" class="form-label">Country <span aria-hidden="true">*</span></label>
+                            <select class="form-select" id="country" name="country" required>
+                                <option value="" selected disabled>Choose your country...</option>
+                                <option value="kz">Kazakhstan</option>
+                                <option value="ru">Russia</option>
+                                <option value="uz">Uzbekistan</option>
+                                <option value="kg">Kyrgyzstan</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="invalid-feedback">Please select your country.</div>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="col-12">
+                            <div class="form-actions">
+                                <button class="button" type="submit">Create account</button>
+                                <button class="button-secondary" type="reset">Reset</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-logo">◆ MacBook Neo</div>
+
+        <p class="footer-text">
+            For those who want full access to every feature — personalized tools,
+            guided paths, and unlimited power to create.
+        </p>
+
+        <ul class="social">
+            <li><a href="#">⚙</a></li>
+            <li><a href="#">✕</a></li>
+            <li><a href="#">◎</a></li>
+            <li><a href="#">▶</a></li>
+        </ul>
+
+        <p class="footer-copy">© 2026 MacBook Neo · All Rights Reserved</p>
+    </footer>
+
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+</html>

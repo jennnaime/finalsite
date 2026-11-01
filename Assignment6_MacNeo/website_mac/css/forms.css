@@ -1,0 +1,263 @@
+/* ==========================================================================
+   Assignment #5 — Forms and Validation
+   Custom styling on top of Bootstrap 5.3 (loaded before this file).
+   Only the pages that own forms link this stylesheet.
+   ========================================================================== */
+
+/* ---------- Shared page shell for the registration page ---------- */
+
+.form-page {
+    background-color: #fde5eb;
+}
+
+.form-page .footer {
+    background: linear-gradient(180deg, #fffbfb, #f6bfce, #f37a9b);
+}
+
+/* ---------- Contact form layout (contacts.html) ---------- */
+
+/* The section is a flex container: text column + form column. */
+.contact-form {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem 1rem 0;
+    border-radius: 24px;
+}
+
+.form-text {
+    width: 100%;
+    margin: 0;
+}
+
+.form-column {
+    width: 100%;
+}
+
+/* ---------- Registration page ---------- */
+
+.form-section {
+    padding: 2rem 1rem 3rem;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background-color: #e3e4e5;
+    border: 1px solid #111;
+    border-radius: 32px;
+}
+
+.form-intro {
+    margin-bottom: 1.25rem;
+    color: #4b4b4b;
+}
+
+.eyebrow {
+    margin-bottom: .25rem;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #8a5a68;
+}
+
+/* ---------- Fields ---------- */
+
+.contact-form .form-label,
+.form-card .form-label {
+    font-weight: 600;
+    color: #172033;
+    margin-bottom: .35rem;
+}
+
+.contact-form .form-control,
+.contact-form .form-select,
+.form-card .form-control,
+.form-card .form-select {
+    border: 1px solid #9a9a9a;
+    border-radius: 10px;
+    padding: .8rem 1rem;
+    background-color: #fff;
+}
+
+.contact-form textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-card textarea.form-control {
+    resize: vertical;
+}
+
+/* Focus ring that matches the site's own focus style */
+.contact-form .form-control:focus,
+.contact-form .form-select:focus,
+.form-card .form-control:focus,
+.form-card .form-select:focus {
+    border-color: #185abc;
+    box-shadow: 0 0 0 .2rem rgba(24, 90, 188, .25);
+}
+
+/* ---------- Helper text ----------
+   NOTE: Bootstrap also defines a .form-text class and this project already
+   uses .form-text for the contact section's left column, so helper text
+   uses its own class to avoid a collision. */
+
+.field-help {
+    display: block;
+    margin-top: .35rem;
+    font-size: .85rem;
+    color: #6d666d;
+}
+
+.field-help.is-error {
+    color: #b02a37;
+}
+
+/* ---------- Validation feedback ---------- */
+
+.invalid-feedback,
+.valid-feedback {
+    font-size: .85rem;
+}
+
+.contact-form .was-validated .form-control:invalid,
+.contact-form .was-validated .form-select:invalid,
+.form-card .was-validated .form-control:invalid,
+.form-card .was-validated .form-select:invalid {
+    border-color: #b02a37;
+}
+
+.contact-form .was-validated .form-control:valid,
+.form-card .was-validated .form-control:valid {
+    border-color: #1e6b35;
+}
+
+/* ---------- Radio / checkbox groups ---------- */
+
+.form-card fieldset {
+    padding: .75rem 1rem 1rem;
+    border: 1px solid #b9b9b9;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+}
+
+.form-card legend {
+    float: none;
+    width: auto;
+    padding: 0 .4rem;
+    margin-bottom: .35rem;
+    font-size: .95rem;
+    font-weight: 600;
+}
+
+.form-card .form-check {
+    margin-bottom: .35rem;
+}
+
+.form-card .form-check-input:checked {
+    background-color: #111;
+    border-color: #111;
+}
+
+/* ---------- Buttons ---------- */
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-top: .5rem;
+}
+
+.button-secondary {
+    display: inline-block;
+    padding: .9rem 2rem;
+    background: transparent;
+    color: #111;
+    border: 2px solid #111;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s, color .2s;
+}
+
+.button-secondary:hover {
+    background: #111;
+    color: #fff;
+}
+
+/* ---------- Messages ---------- */
+
+.demo-note {
+    font-size: .85rem;
+}
+
+.success-box {
+    background-color: #d8f0dd;
+    border: 1px solid #1e6b35;
+    border-radius: 10px;
+    padding: .9rem 1.1rem;
+    margin-bottom: 1rem;
+    color: #14512a;
+    font-weight: 600;
+}
+
+/* ---------- Guard: Bootstrap's .card is flex, the contact cards are not ---------- */
+
+.cards .card {
+    display: block;
+}
+
+/* ---------- Optional controls must stay neutral ----------
+   Bootstrap paints every :valid control green, including fields that are not
+   required. Those fields are not "correct", they are simply optional. */
+
+.was-validated .form-control:valid:not([required]),
+.was-validated .form-select:valid:not([required]) {
+    border-color: #9a9a9a;
+}
+
+.was-validated .form-select:valid:not([required]) {
+    background-image: var(--bs-form-select-bg-img);
+}
+
+.was-validated .form-check-input:valid:not([required]) {
+    border-color: #b9b9b9;
+    background-color: #fff;
+}
+
+.was-validated .form-check-input:valid:not([required]):checked {
+    background-color: #111;
+    border-color: #111;
+}
+
+.was-validated .form-check-input:valid:not([required]) ~ .form-check-label {
+    color: inherit;
+}
+
+/* ---------- Tablet / desktop ---------- */
+
+@media (min-width: 48rem) {
+
+    .contact-form {
+        flex-direction: row;
+        gap: 40px;
+        padding: 30px;
+        margin: 50px 70px 0;
+        border-radius: 50px;
+    }
+
+    .form-text,
+    .form-column {
+        width: 45%;
+    }
+
+    .form-card {
+        padding: 2.5rem 3rem;
+        border-radius: 40px;
+    }
+}

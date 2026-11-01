@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | MacBook Neo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
+<body class="page">
+
+    <header>
+        <nav class="menu" aria-label="Main navigation">
+            <p class="logo"><b>MacNeo</b></p>
+            <ul class="menu-list">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+            <div class="menu-right">
+                <button type="button" class="theme-toggle" id="themeToggle" aria-pressed="false">Dark mode</button>
+                <p>Sign in</p>
+                <p>Log in</p>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section class="hero">
+            <p class="small-text">Official Mac Neo store · Made for students, designers and developers</p>
+
+            <h1>Discover the Power of MacNeo</h1>
+
+            <p class="hero-text">
+                Step into the future of creativity and performance. MacNeo brings speed,
+                elegance, and powerful technology together in one beautifully designed experience.
+            </p>
+
+            <a href="contacts.html" class="button buy-button">Buy</a>
+
+            <figure class="hero-image">
+                <img src="images/original.png" alt="MacBook Neo laptop in Blush color, front view" width="800" height="500">
+                <figcaption>MacBook Neo — the new laptop from Apple</figcaption>
+            </figure>
+
+            <ul class="stats">
+                <li class="stat"><strong>200+</strong><span>users</span></li>
+                <li class="stat"><strong>4h</strong><span>battery</span></li>
+                <li class="stat"><strong>56</strong><span>countries</span></li>
+                <li class="stat"><strong>4.9</strong><span>rating</span></li>
+            </ul>
+
+            <!-- TASK 0: PERSONALISED GREETING -->
+            <div class="greeting-block">
+                <p class="demo-label">Task 0 · Personal greeting</p>
+
+                <form class="inline-form" id="greetingForm">
+                    <label for="nameInput">Your name</label>
+                    <input type="text" id="nameInput" name="name" placeholder="Write your name" autocomplete="off">
+                    <button type="submit" class="button small-button">Say hello</button>
+                </form>
+
+                <p class="form-message" id="greetingMessage" aria-live="polite">Tell us your name and we will greet you.</p>
+            </div>
+        </section>
+
+        <!-- BENEFITS -->
+        <section class="benefits">
+            <h2>Why Mac Neo</h2>
+            <p class="section-text">Built for study, work and everything in between.</p>
+
+            <div class="benefits-grid">
+
+                <article class="benefit benefit-photo">
+                    <img src="images/study.jpg" alt="Students using MacBook Neo at a desk" width="600" height="800">
+                    <div class="benefit-text">
+                        <h3>500K+ Users</h3>
+                        <p>Students, designers and developers choose Mac Neo every year.</p>
+                    </div>
+                </article>
+
+                <article class="benefit benefit-blue">
+                    <h3 class="big-number">16h</h3>
+                    <p>All-Day Battery. One charge lasts from morning to night — and still leaves time for one more episode.</p>
+                </article>
+
+                <article class="benefit benefit-white">
+                    <h3 class="big-number">1B</h3>
+                    <p>Vibrant Display. A 13-inch Liquid Retina screen with a billion colors and 500 nits of brightness.</p>
+                </article>
+
+                <article class="benefit benefit-text">
+                    <h3>Silent, Fanless Design</h3>
+                    <p>Not a single fan. Mac Neo runs completely silent thanks to the energy-efficient M3 architecture.</p>
+                </article>
+
+                <article class="benefit benefit-wide">
+                    <h3>Apple Intelligence. Built In.</h3>
+                    <p>Built-in AI tools for writing, editing and productivity run on-device — secure, fast and offline.</p>
+                    <ul class="tags">
+                        <li>Writing Tools</li>
+                        <li>Management</li>
+                    </ul>
+                </article>
+
+                <article class="benefit benefit-green">
+                    <span class="benefit-icon">🔗</span>
+                    <h3 class="big-number">∞</h3>
+                    <p>Ecosystem Continuity. Mac Neo pairs seamlessly with iPhone: Clipboard, AirDrop and Handoff just work.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FEATURED -->
+        <section class="featured">
+            <div class="featured-box">
+
+                <div class="featured-pill">
+                    <span class="pill-dot"></span>
+                    Featured product <span class="pill-pink">Apple MacNeo</span>.
+                </div>
+
+                <div class="featured-row">
+
+                    <div class="featured-text">
+                        <h2 class="featured-title">
+                            Meet<br>
+                            <span class="title-pink">Blush.</span>
+                        </h2>
+                        <p class="featured-subtitle">
+                            Fresh colors.<br>
+                            Serious power.
+                        </p>
+                    </div>
+
+                    <div class="featured-image">
+                        <img src="images/pinkneo.jpg" alt="MacBook Neo in Blush color, open" width="600" height="400">
+                    </div>
+
+                </div>
+
+                <ul class="specs">
+                    <li class="spec">
+                        <img src="images/keyboard.jpg" alt="MacBook Neo Magic Keyboard close up" width="600" height="400">
+                        <strong>Magic Keyboard</strong>
+                        <span>and large trackpad</span>
+                    </li>
+                    <li class="spec">
+                        <img src="images/audio.jpg" alt="MacBook Neo USB-C ports and headphone jack" width="600" height="400">
+                        <strong>2 USB-C ports</strong>
+                        <span>and headphone jack</span>
+                    </li>
+                    <li class="spec">
+                        <img src="images/alumni.jpg" alt="MacBook Neo aluminum unibody design" width="600" height="400">
+                        <strong class="spec-pink">Aluminum</strong>
+                        <span>unibody design</span>
+                    </li>
+                    <li class="spec">
+                        <span class="spec-icon">📷</span>
+                        <strong class="spec-blue">1080p</strong>
+                        <span>FaceTime HD camera</span>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- TASK 4: WISHLIST -->
+        <section class="wishlist-section">
+            <p class="demo-label">Task 4 · Wishlist with add and remove</p>
+
+            <h2>Build your own wishlist</h2>
+            <p class="wishlist-note">
+                Save the model or accessory you want. Every item has its own Remove button,
+                and the counter below stays correct after every change.
+            </p>
+
+            <form class="inline-form" id="wishlistForm">
+                <label for="wishlistInput">Add to the wishlist</label>
+                <input type="text" id="wishlistInput" placeholder="Neo Pro, Magic Mouse, ..." autocomplete="off">
+                <button type="submit" class="button small-button">Add</button>
+            </form>
+
+            <p class="form-message" id="wishlistMessage">Please write something before adding it.</p>
+
+            <ul class="wishlist" id="wishlist"></ul>
+            <p class="wishlist-empty" id="wishlistEmpty">Your wishlist is empty. Add the first item above.</p>
+            <p class="wishlist-count">Items in the wishlist: <span id="wishlistCount">0</span></p>
+            <p class="wishlist-toast" id="wishlistToast" role="status">Saved to your wishlist.</p>
+        </section>
+
+        <!-- TASK 5: PRE-ORDER FORM -->
+        <section class="preorder-section">
+            <p class="demo-label">Task 5 · Pre-order form with jQuery validation</p>
+
+            <h2>Reserve your MacNeo</h2>
+            <p class="preorder-note">Demo only: the form checks your data in the browser. Nothing is sent, stored or charged.</p>
+
+            <form id="preorderForm" novalidate>
+                <fieldset>
+                    <label for="poName">Your name</label>
+                    <input type="text" id="poName" name="name" autocomplete="name">
+                    <p class="field-error" id="poNameError"></p>
+
+                    <label for="poEmail">Email</label>
+                    <input type="email" id="poEmail" name="email" autocomplete="email">
+                    <p class="field-error" id="poEmailError"></p>
+
+                    <label for="poModel">Model</label>
+                    <select id="poModel" name="model">
+                        <option value="">Choose a model</option>
+                        <option value="MacNeo">MacNeo — $999</option>
+                        <option value="Neo Pro">Neo Pro — $1,499</option>
+                        <option value="Neo Max">Neo Max — $2,199</option>
+                    </select>
+                    <p class="field-error" id="poModelError"></p>
+
+                    <button type="submit" class="button small-button">Send request</button>
+                </fieldset>
+            </form>
+
+            <p class="form-success" id="poSuccess" role="status"></p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-logo">◆ MacBook Neo</div>
+
+        <p class="footer-text">
+            For those who want full access to every feature — personalized tools,
+            guided paths, and unlimited power to create.
+        </p>
+
+        <ul class="social">
+            <li><a href="#">⚙</a></li>
+            <li><a href="#">✕</a></li>
+            <li><a href="#">◎</a></li>
+            <li><a href="#">▶</a></li>
+        </ul>
+
+        <p class="footer-copy">© 2026 MacBook Neo · All Rights Reserved</p>
+    </footer>
+
+    <script src="js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+</html>

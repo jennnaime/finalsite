@@ -1,0 +1,218 @@
+body {
+    background: linear-gradient( 180deg, #fee9ee 30%, #f6bfce 60%, #fdeef1 100%);
+}
+
+.section {
+    background-color: white;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.slogan {
+    font-family: -apple-system;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #1d1d1f;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.feature-image {
+    flex: 1;
+}
+
+    .feature-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 15px;
+    }
+
+.feature-text {
+    flex: 1;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.4;
+    font-family: -apple-system;
+    color: #1d1d1f;
+}
+
+.feature-text-pink {
+    font-size: 32px;
+    color: #ffc5d3;
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-family: -apple-system;
+}
+
+.feature-text-gray {
+    font-size: 32px;
+    color: #aba9ad;
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-family: -apple-system;
+}
+
+.feature-text-citrus {
+    font-size: 32px;
+    color: #ED820E;
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-family: -apple-system;
+}
+
+.feature-text-indigo {
+    font-size: 32px;
+    color: #151B54;
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-family: -apple-system;
+}
+
+.grid-section {
+    background-color: #fff4c8;
+    font-family: -apple-system;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.grid-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 30px;
+}
+
+
+.grid-card {
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+    .grid-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        background-color: #fafafa;
+        border-color: #e5e5e5;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+    }
+
+.card-image-placeholder {
+    font-size: 20px;
+    text-align: center;
+    margin-top: auto;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+    .card-image-placeholder img {
+        max-width: 100%;
+        max-height: 160px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+
+
+.slider-section {
+    background-color: #cac9e9;
+    font-family: -apple-system;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.slider-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 30px;
+}
+
+.cards-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.row-card {
+    flex: 0 0 310px;
+    height: 420px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+    .row-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        background-color: #ffc5d3;
+        border-color: #fca5a5;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+    }
+.footer {
+    background: linear-gradient(180deg,#fbe4e9 , #f6bfce, #f37a9b);
+}
+.card-tag {
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .specs-table th,
+    .specs-table td {
+        padding: 12px 16px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .specs-table th {
+        background: #fdeef1;
+        font-weight: bold;
+    }
+
+    .specs-table tr:hover {
+        background: #fafafa;
+    }
